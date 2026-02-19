@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Emanuel Digital | Sites Profissionais</title>
+
+<!-- COLE A TAG DO GOOGLE AQUI -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b1220;
+color:#fff;
+}
+
+header{
+background:#0e1628;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
+height:50px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#00c3ff;
+}
+
+.banner{
+width:100%;
+height:45vh;
+background:url('banner.png') center/cover no-repeat;
+}
+
+.hero-text{
+text-align:center;
+padding:60px 20px;
+max-width:800px;
+margin:auto;
+}
+
+.hero-text h1{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:25px;
+color:#cfcfcf;
+}
+
+.btn{
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+margin:5px;
+display:inline-block;
+transition:0.3s;
+}
+
+.btn-primary{
+background:#00c3ff;
+color:#000;
+}
+
+.btn-primary:hover{
+background:#009ac9;
+}
+
+.btn-whats{
+background:#25d366;
+color:#fff;
+}
+
+section{
+padding:70px 8%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:28px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#162038;
+padding:25px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card i{
+font-size:30px;
+color:#00c3ff;
+margin-bottom:15px;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.testimonial{
+background:#162038;
+padding:25px;
+border-radius:12px;
+}
+
+form{
+max-width:500px;
+margin:0 auto;
+display:flex;
+flex-direction:column;
+}
+
+form input, form textarea{
+margin-bottom:15px;
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
+form button{
+background:#00c3ff;
+border:none;
+padding:12px;
+border-radius:30px;
+font-weight:600;
+cursor:pointer;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:#fff;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.banner{
+height:35vh;
+}
+.hero-text h1{
+font-size:24px;
+}
+}
+
+/* RODAPÉ */
+.footer{
+background:#0e1628;
+padding:60px 8% 20px;
+margin-top:60px;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-bottom:30px;
+}
+
+.footer-col h3,
+.footer-col h4{
+margin-bottom:15px;
+color:#00c3ff;
+}
+
+.footer-col p,
+.footer-col a{
+color:#cfcfcf;
+font-size:14px;
+text-decoration:none;
+display:block;
+margin-bottom:10px;
+}
+
+.footer-col a:hover{
+color:#00c3ff;
+}
+
+.footer-bottom{
+border-top:1px solid #1f2b47;
+padding-top:20px;
+text-align:center;
+font-size:13px;
+color:#888;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="logo.png" alt="Emanuel Digital">
+</div>
+
+<nav>
+<a href="#servicos">Serviços</a>
+<a href="#depoimentos">Depoimentos</a>
+<a href="#contato">Contato</a>
+<a href="sobre.html">Sobre</a>
+</nav>
+</header>
+
+<div class="banner"></div>
+
+<div class="hero-text">
+<h1>Criamos Sites que Geram Clientes Todos os Dias</h1>
+<p>Sites profissionais, presença no Google e estratégias digitais para sua empresa crescer.</p>
+
+<a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+<a href="https://wa.me/553798416044" class="btn btn-whats">
+<i class="fab fa-whatsapp"></i> Falar no WhatsApp
+</a>
+</div>
+
+<section id="servicos">
+<h2>Nossos Serviços</h2>
+<div class="services">
+
+<div class="card">
+<i class="fas fa-globe"></i>
+<h3>Criação de Sites</h3>
+<p>Sites rápidos, modernos e responsivos.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-search"></i>
+<h3>Google Meu Negócio</h3>
+<p>Cadastro e otimização no Google.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-bullhorn"></i>
+<h3>Google Ads</h3>
+<p>Campanhas que geram clientes.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-chart-line"></i>
+<h3>Marketing Digital</h3>
+<p>Estratégias para aumentar vendas.</p>
+</div>
+
+</div>
+</section>
+
+<section id="depoimentos">
+<h2>O Que Nossos Clientes Dizem</h2>
+<div class="testimonials">
+
+<div class="testimonial">
+<p>“Depois que fiz meu site com a Emanuel Digital, comecei a receber clientes todos os dias pelo Google.”</p>
+<strong>— Carlos Henrique, MG</strong>
+</div>
+
+<div class="testimonial">
+<p>“Atendimento rápido e site moderno. Já recebi pedidos na primeira semana.”</p>
+<strong>— Juliana Martins, SP</strong>
+</div>
+
+<div class="testimonial">
+<p>“Hoje minha empresa aparece no Google e os clientes chegam sozinhos.”</p>
+<strong>— Roberto Almeida, GO</strong>
+</div>
+
+<div class="testimonial">
+<p>“Entrega antes do prazo e suporte sempre que precisei.”</p>
+<strong>— Mariana Souza, PR</strong>
+</div>
+
+</div>
+</section>
+
+<section id="contato">
+<h2>Solicite um Orçamento</h2>
+
+<form action="https://formsubmit.co/agregagomes@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="Novo orçamento - Emanuel Digital">
+<input type="hidden" name="_next" value="obrigado.html">
+
+<input type="text" name="Nome" placeholder="Seu nome" required>
+<input type="email" name="Email" placeholder="Seu email" required>
+<textarea name="Mensagem" rows="4" placeholder="Descreva seu projeto"></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+</section>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+<h3>Emanuel Digital</h3>
+<p>Especialistas em criação de sites profissionais e estratégias digitais que geram clientes todos os dias.</p>
+</div>
+
+<div class="footer-col">
+<h4>Links Rápidos</h4>
+<a href="#servicos">Serviços</a>
+<a href="#depoimentos">Depoimentos</a>
+<a href="#contato">Contato</a>
+<a href="sobre.html">Sobre Nós</a>
+<a href="politica.html">Política de Privacidade</a>
+</div>
+
+<div class="footer-col">
+<h4>Contato</h4>
+<p><i class="fas fa-phone"></i> (37) 98416-0444</p>
+<p><i class="fas fa-envelope"></i> contato@emanuelweb.com</p>
+<p><i class="fas fa-map-marker-alt"></i> Brasil</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Emanuel Digital - Todos os direitos reservados</p>
+</div>
+
+</footer>
+
+<a href="https://wa.me/553798416044" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
