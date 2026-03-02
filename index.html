@@ -7,7 +7,6 @@
 <meta name="description" content="Apareça no Google e receba clientes todos os dias. Criação de sites profissionais para empresas que querem vender mais.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
 <!-- GOOGLE ADS TAG GLOBAL -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17979486534"></script>
@@ -18,6 +17,107 @@ gtag('js', new Date());
 gtag('config', 'AW-17979486534');
 </script>
 
+<style>
+/* RESET E FONTES */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+body { background:#0b0b0b; color:#fff; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
+
+/* TOPO */
+.topbar {
+  background:#0a2239; /* Azul escuro harmonioso */
+  color:#00c3ff;
+  text-align:center;
+  padding:10px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+/* HEADER */
+header { display:flex; align-items:center; padding:20px; }
+.logo img { height:50px; margin-right:10px; }
+.logo span { font-weight:800; font-size:22px; color:#00c3ff; }
+
+/* HERO */
+.hero { 
+  background:url('hero.jpg') center/cover no-repeat; 
+  height:400px; 
+}
+.hero-text {
+  text-align:center; padding:40px 20px;
+}
+.hero-text h1 { font-size:32px; margin:20px 0; }
+.hero-text h1 span { color:#00c3ff; }
+.hero-text p { max-width:700px; margin:0 auto 30px; color:#ccc; font-size:16px; }
+.proof-top { font-size:16px; margin-bottom:10px; }
+
+/* CTA BOTÕES */
+.cta-wrapper a {
+  display:inline-block; padding:15px 30px; margin:5px; border-radius:8px; font-weight:bold; transition:0.3s;
+}
+.cta-wrapper .whats { background:#00c3ff; color:#000; }
+.cta-wrapper .primary { 
+  background:#00c3ff; 
+  color:#000; 
+  animation: pulse 1.5s infinite; /* botão piscando */
+}
+
+/* animação do botão */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0px rgba(0,195,255,0.7); }
+  50% { box-shadow: 0 0 15px rgba(0,195,255,0.7); }
+  100% { box-shadow: 0 0 0px rgba(0,195,255,0.7); }
+}
+
+/* URGENCY */
+.urgency { margin-top:20px; font-size:16px; color:#ff3300; }
+
+/* REVIEWS */
+.reviews { padding:60px 20px; text-align:center; }
+.review { background:#111; padding:20px; border-radius:12px; margin:15px auto; max-width:500px; box-shadow:0 8px 20px rgba(0,0,0,0.5); }
+.review .stars { margin-bottom:10px; color:#ffcc00; }
+.review p { margin-bottom:8px; color:#ccc; }
+
+/* SERVIÇOS */
+.services { padding:80px 20px; text-align:center; background:#0d0d0d; }
+.services h2 { font-size:36px; margin-bottom:10px; }
+.services p { max-width:700px; margin:0 auto 50px; color:#ccc; font-size:16px; }
+.service-cards { display:flex; flex-wrap:wrap; justify-content:center; gap:25px; }
+.service-card { background:#111; padding:30px; border-radius:12px; width:300px; box-shadow:0 8px 20px rgba(0,0,0,0.5); transition:0.3s; text-align:left; }
+.service-card h3 { font-size:22px; margin-bottom:15px; color:#00c3ff; }
+.service-card p { color:#ccc; font-size:15px; margin-bottom:15px; }
+.service-card ul { list-style:none; color:#00c3ff; font-size:14px; line-height:1.5; padding-left:15px; }
+.service-card ul li::before { content:"• "; color:#00c3ff; }
+
+/* FORMULÁRIO */
+#contato { padding:60px 20px; text-align:center; }
+#contato h2 { margin-bottom:30px; font-size:28px; }
+#contato form { max-width:500px; margin:0 auto; display:flex; flex-direction:column; gap:15px; }
+#contato input, #contato textarea { padding:12px; border-radius:6px; border:none; font-size:15px; }
+#contato button { background:#00c3ff; color:#000; font-weight:bold; padding:15px; border:none; border-radius:8px; cursor:pointer; transition:0.3s; }
+#contato button:hover { background:#00a3e0; }
+
+/* FOOTER */
+footer { background:#0b0b0b; color:#fff; padding:40px 20px; text-align:center; }
+footer a { color:#00c3ff; }
+footer p { margin:8px 0; color:#ccc; }
+
+/* BOTÃO WHATSAPP FLUTUANTE */
+.whats-float {
+  position:fixed; bottom:20px; right:20px; z-index:9999;
+  background:#00c3ff; color:#000; padding:15px 25px; border-radius:8px; font-weight:bold; display:flex; align-items:center; gap:8px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVO */
+@media (max-width:768px) {
+  .hero-text h1 { font-size:26px; }
+  .cta-wrapper a { padding:12px 20px; font-size:14px; }
+  .service-cards { flex-direction:column; gap:20px; }
+  .service-card { width:100%; max-width:350px; margin:0 auto; }
+  header { flex-direction:column; gap:10px; }
+}
+</style>
 </head>
 
 <body>
@@ -28,7 +128,7 @@ gtag('config', 'AW-17979486534');
 
 <header>
 <div class="logo">
-<img src="logo.png" alt="Logo">
+<img src="logo.png" alt="Logo Emanuel Digital">
 <span>Emanuel Digital</span>
 </div>
 </header>
@@ -37,7 +137,6 @@ gtag('config', 'AW-17979486534');
 <section class="hero"></section>
 
 <section class="hero-text">
-
 <div class="proof-top">
 <span role="img" aria-label="5 estrelas">★★★★★</span> Mais de 100 pessoas atendidas
 </div>
@@ -52,23 +151,15 @@ Criamos sites profissionais para empresas que querem vender mais e parar de depe
 </p>
 
 <div class="cta-wrapper">
-
-<a href="https://wa.me/5511922123841"
-class="btn whats"
-onclick="gtag('event','conversion',{'send_to':'AW-17979486534/2d0jCIqmgoAcEMbipP1C'});">
+<a href="https://wa.me/5511922123841" class="whats" onclick="gtag('event','conversion',{'send_to':'AW-17979486534/2d0jCIqmgoAcEMbipP1C'});">
 FALAR NO WHATSAPP AGORA
 </a>
-
-<a href="#contato" class="btn primary">
-QUERO UM SITE PROFISSIONAL
-</a>
-
+<a href="#contato" class="primary">QUERO UM SITE PROFISSIONAL</a>
 </div>
 
 <div class="urgency">
 🔥 +12 pessoas solicitaram orçamento hoje
 </div>
-
 </section>
 
 <section class="reviews">
@@ -108,25 +199,17 @@ QUERO UM SITE PROFISSIONAL
 <strong>— Juliana Martins</strong>
 <small>Empresária</small>
 </div>
-
 </section>
 
-  <section class="services" style="padding:80px 20px; text-align:center; background:#0d0d0d; color:#fff; font-family:Poppins, sans-serif;">
+<section class="services">
+<h2 class="section-title">Nossos Serviços Premium</h2>
+<p>Soluções completas para colocar sua empresa à frente da concorrência, atrair clientes e aumentar suas vendas diariamente.</p>
 
-<h2 class="section-title" style="font-size:36px; margin-bottom:10px;">Nossos Serviços Premium</h2>
-<p style="max-width:700px; margin:0 auto 50px; color:#ccc; font-size:16px;">
-Soluções completas para colocar sua empresa à frente da concorrência, atrair clientes e aumentar suas vendas diariamente.
-</p>
-
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px;">
-
-<!-- SERVIÇO 1 -->
-<div style="background:#111; padding:30px; border-radius:12px; width:300px; box-shadow:0 8px 20px rgba(0,0,0,0.5); transition:0.3s;">
-<h3 style="font-size:22px; margin-bottom:15px;">🌐 Criação de Sites Profissionais</h3>
-<p style="color:#ccc; font-size:15px; margin-bottom:15px;">
-Sites modernos, rápidos, responsivos e preparados para converter visitantes em clientes reais.
-</p>
-<ul style="text-align:left; color:#00c3ff; font-size:14px; line-height:1.5;">
+<div class="service-cards">
+<div class="service-card">
+<h3>🌐 Criação de Sites Profissionais</h3>
+<p>Sites modernos, rápidos, responsivos e preparados para converter visitantes em clientes reais.</p>
+<ul>
 <li>Design exclusivo e moderno</li>
 <li>Compatível com todos os dispositivos</li>
 <li>Otimizado para SEO</li>
@@ -134,13 +217,10 @@ Sites modernos, rápidos, responsivos e preparados para converter visitantes em 
 </ul>
 </div>
 
-<!-- SERVIÇO 2 -->
-<div style="background:#111; padding:30px; border-radius:12px; width:300px; box-shadow:0 8px 20px rgba(0,0,0,0.5); transition:0.3s;">
-<h3 style="font-size:22px; margin-bottom:15px;">📈 Tráfego Pago e Google Ads</h3>
-<p style="color:#ccc; font-size:15px; margin-bottom:15px;">
-Atraia clientes prontos para comprar com campanhas inteligentes e estratégias testadas.
-</p>
-<ul style="text-align:left; color:#00c3ff; font-size:14px; line-height:1.5;">
+<div class="service-card">
+<h3>📈 Tráfego Pago e Google Ads</h3>
+<p>Atraia clientes prontos para comprar com campanhas inteligentes e estratégias testadas.</p>
+<ul>
 <li>Campanhas no Google e YouTube</li>
 <li>Segmentação avançada de público</li>
 <li>Controle total do orçamento</li>
@@ -148,13 +228,10 @@ Atraia clientes prontos para comprar com campanhas inteligentes e estratégias t
 </ul>
 </div>
 
-<!-- SERVIÇO 3 -->
-<div style="background:#111; padding:30px; border-radius:12px; width:300px; box-shadow:0 8px 20px rgba(0,0,0,0.5); transition:0.3s;">
-<h3 style="font-size:22px; margin-bottom:15px;">🚀 Otimização e SEO</h3>
-<p style="color:#ccc; font-size:15px; margin-bottom:15px;">
-Posicionamos seu site nas primeiras posições do Google, aumentando contatos e vendas de forma orgânica.
-</p>
-<ul style="text-align:left; color:#00c3ff; font-size:14px; line-height:1.5;">
+<div class="service-card">
+<h3>🚀 Otimização e SEO</h3>
+<p>Posicionamos seu site nas primeiras posições do Google, aumentando contatos e vendas de forma orgânica.</p>
+<ul>
 <li>SEO on-page completo</li>
 <li>Pesquisa de palavras-chave estratégicas</li>
 <li>Otimização de velocidade do site</li>
@@ -162,92 +239,54 @@ Posicionamos seu site nas primeiras posições do Google, aumentando contatos e 
 </ul>
 </div>
 
-<!-- SERVIÇO 4 -->
-<div style="background:#111; padding:30px; border-radius:12px; width:300px; box-shadow:0 8px 20px rgba(0,0,0,0.5); transition:0.3s;">
-<h3 style="font-size:22px; margin-bottom:15px;">📲 Integração e Automação</h3>
-<p style="color:#ccc; font-size:15px; margin-bottom:15px;">
-Conecte seu site com WhatsApp, email marketing e ferramentas de vendas para não perder nenhum lead.
-</p>
-<ul style="text-align:left; color:#00c3ff; font-size:14px; line-height:1.5;">
+<div class="service-card">
+<h3>📲 Integração e Automação</h3>
+<p>Conecte seu site com WhatsApp, email marketing e ferramentas de vendas para não perder nenhum lead.</p>
+<ul>
 <li>WhatsApp Web integrado</li>
 <li>Formulários automáticos</li>
 <li>Emails e notificações automáticas</li>
 <li>Gestão de leads simplificada</li>
 </ul>
 </div>
-
 </div>
 
 <div style="margin-top:50px;">
-<a href="https://wa.me/5511922123841"
-style="display:inline-block; padding:16px 35px; background:#00c3ff; color:#000; text-decoration:none; border-radius:8px; font-weight:bold; font-size:16px; transition:0.3s;">
-💬 Quero atrair mais clientes
-</a>
+<a href="https://wa.me/5511922123841" style="display:inline-block; padding:16px 35px; background:#00c3ff; color:#000; border-radius:8px; font-weight:bold;">💬 Quero atrair mais clientes</a>
 </div>
-
 </section>
 
 <section id="contato">
 <h2 class="section-title">Solicite seu Orçamento</h2>
 
 <form action="https://formsubmit.co/emanuelmarketing01@gmail.com" method="POST">
-
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_next" value="https://emanuelmarketing.online/obrigado.html">
 
 <label for="nome">Seu nome</label>
-<input type="text" name="Nome" id="nome" placeholder="Seu nome" required>
+<input type="text" name="nome" id="nome" placeholder="Seu nome" required autocomplete="name">
 
 <label for="email">Seu email</label>
-<input type="email" name="Email" id="email" placeholder="Seu email" required>
+<input type="email" name="email" id="email" placeholder="Seu email" required autocomplete="email">
 
 <label for="mensagem">Descreva seu projeto</label>
-<textarea name="Mensagem" id="mensagem" placeholder="Descreva seu projeto"></textarea>
+<textarea name="mensagem" id="mensagem" placeholder="Descreva seu projeto" required></textarea>
 
 <button type="submit">RECEBER ORÇAMENTO</button>
-
 </form>
 </section>
-</main>
 
-<!-- FOOTER CORRIGIDO -->
-<footer style="background:#0b0b0b; color:#fff; padding:40px 20px; text-align:center; font-family:Arial;">
-
-<h2 style="margin-bottom:10px;">Emanuel Digital</h2>
-<p style="color:#aaa;">Soluções em Marketing Digital</p>
-
-<p style="margin:15px 0;">
-🔒 <a href="politica.html" style="color:#00c3ff;">Política de Privacidade</a> | 
-<a href="sobre.html" style="color:#00c3ff;">Sobre Nós</a>
-</p>
-
+<footer>
+<h2>Emanuel Digital</h2>
+<p>Soluções em Marketing Digital</p>
+<p>🔒 <a href="politica.html">Política de Privacidade</a> | <a href="sobre.html">Sobre Nós</a></p>
 <p>📧 emanuelmarketing01@gmail.com</p>
 <p>📲 (11) 92212-3841</p>
-
-<p style="margin:20px 0; color:#ccc;">
-🌎 Atendimento online em todo o Brasil
-</p>
-
-<p style="font-weight:bold;">
-💻 Desenvolvimento de Sites Profissionais
-</p>
-
-<a href="https://wa.me/5511922123841"
-style="display:inline-block; margin-top:15px; padding:12px 25px; background:#00c3ff; color:#000; text-decoration:none; border-radius:5px; font-weight:bold;">
-💬 Peça seu orçamento
-</a>
-
-<p style="margin-top:30px; font-size:14px; color:#777;">
-&copy; 2026 Emanuel Digital - Todos os direitos reservados
-</p>
-
+<p>🌎 Atendimento online em todo o Brasil</p>
+<p>💻 Desenvolvimento de Sites Profissionais</p>
+<a href="https://wa.me/5511922123841" class="whats-float">💬 Peça seu orçamento</a>
+<p style="margin-top:30px; font-size:14px; color:#777;">&copy; 2026 Emanuel Digital - Todos os direitos reservados</p>
 </footer>
-
-<a href="https://wa.me/5511922123841"
-class="whats-float"
-onclick="gtag('event','conversion',{'send_to':'AW-17979486534/2d0jCIqmgoAcEMbipP1C'});">
-💬 Peça seu Orçamento
-</a>
 
 </body>
 </html>
