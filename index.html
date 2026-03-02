@@ -283,10 +283,28 @@ Criamos sites profissionais para empresas que querem vender mais e parar de depe
 <section id="contato">
 <h2 class="section-title">Solicite seu Orçamento</h2>
 
-<form action="https://formsubmit.co/emanueldigitalonline@gmail.com" method="POST">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://emanuelmarketing.online/obrigado.html">
+<section id="contato">
+  <h2 class="section-title">Solicite seu Orçamento</h2>
 
+  <form action="https://formsubmit.co/emanueldigitalonline@gmail.com" method="POST" 
+        onsubmit="gtag('event','conversion',{'send_to':'AW-17979486534/2d0jCIqmgoAcEMbipP1C'});">
+    
+    <!-- Redireciona para a página de obrigado -->
+    <input type="hidden" name="_next" value="https://emanuelmarketing.online/obrigado.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="nome">Seu nome</label>
+    <input type="text" name="nome" id="nome" placeholder="Seu nome" required autocomplete="name">
+
+    <label for="email">Seu email</label>
+    <input type="email" name="email" id="email" placeholder="Seu email" required autocomplete="email">
+
+    <label for="mensagem">Descreva seu projeto</label>
+    <textarea name="mensagem" id="mensagem" placeholder="Descreva seu projeto" required></textarea>
+
+    <button type="submit">RECEBER ORÇAMENTO</button>
+  </form>
+</section>
 <label for="nome">Seu nome</label>
 <input type="text" name="nome" id="nome" placeholder="Seu nome" required autocomplete="name">
 
