@@ -6,8 +6,6 @@
 <title>Criação de Sites Profissionais | Emanuel Digital</title>
 <meta name="description" content="Apareça no Google e receba clientes todos os dias. Criação de sites profissionais para empresas que querem vender mais.">
 
-<link href="banner.png" rel="stylesheet">
-
 <!-- GOOGLE ADS TAG GLOBAL -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17979486534"></script>
 <script>
@@ -25,7 +23,7 @@ a { text-decoration:none; color:inherit; }
 
 /* TOPO */
 .topbar {
-  background:#0a2239; /* Azul escuro harmonioso */
+  background:#0a2239; 
   color:#00c3ff;
   text-align:center;
   padding:10px;
@@ -34,17 +32,34 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* HEADER */
-header { display:flex; align-items:center; padding:20px; }
-.logo img { height:50px; margin-right:10px; }
+header { display:flex; align-items:center; justify-content:space-between; padding:20px; flex-wrap:wrap; }
+.logo { display:flex; align-items:center; gap:10px; }
+.logo img { height:50px; }
 .logo span { font-weight:800; font-size:22px; color:#00c3ff; }
 
-/* HERO */
-.hero { 
-  background:url('hero.jpg') center/cover no-repeat; 
-  height:400px; 
+/* BANNER */
+.banner {
+  background:url('banner.png') center/cover no-repeat;
+  width:100%;
+  height:400px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
 }
+.banner h1 {
+  color:#fff;
+  font-size:32px;
+  text-align:center;
+  background: rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:10px;
+}
+
+/* HERO TEXTO */
 .hero-text {
-  text-align:center; padding:40px 20px;
+  text-align:center;
+  padding:40px 20px;
 }
 .hero-text h1 { font-size:32px; margin:20px 0; }
 .hero-text h1 span { color:#00c3ff; }
@@ -55,18 +70,23 @@ header { display:flex; align-items:center; padding:20px; }
 .cta-wrapper a {
   display:inline-block; padding:15px 30px; margin:5px; border-radius:8px; font-weight:bold; transition:0.3s;
 }
-.cta-wrapper .whats { background:#00c3ff; color:#000; }
+
+/* Botão principal WhatsApp piscando */
+.cta-wrapper .whats {
+  background:#00c3ff;
+  color:#000;
+  animation: pulse 1.5s infinite;
+}
 .cta-wrapper .primary { 
-  background:#00c3ff; 
-  color:#000; 
-  animation: pulse 1.5s infinite; /* botão piscando */
+  background:#00c3ff;
+  color:#000;
 }
 
-/* animação do botão */
+/* ANIMAÇÃO PULSANTE */
 @keyframes pulse {
-  0% { box-shadow: 0 0 0px rgba(0,195,255,0.7); }
-  50% { box-shadow: 0 0 15px rgba(0,195,255,0.7); }
-  100% { box-shadow: 0 0 0px rgba(0,195,255,0.7); }
+  0% { box-shadow: 0 0 0px rgba(0,195,255,0.7); transform: scale(1); }
+  50% { box-shadow: 0 0 15px rgba(0,195,255,0.7); transform: scale(1.05); }
+  100% { box-shadow: 0 0 0px rgba(0,195,255,0.7); transform: scale(1); }
 }
 
 /* URGENCY */
@@ -115,7 +135,8 @@ footer p { margin:8px 0; color:#ccc; }
   .cta-wrapper a { padding:12px 20px; font-size:14px; }
   .service-cards { flex-direction:column; gap:20px; }
   .service-card { width:100%; max-width:350px; margin:0 auto; }
-  header { flex-direction:column; gap:10px; }
+  header { flex-direction:column; align-items:flex-start; gap:10px; }
+  .banner { height:250px; }
 }
 </style>
 </head>
@@ -133,9 +154,12 @@ footer p { margin:8px 0; color:#ccc; }
 </div>
 </header>
 
-<main>
-<section class="hero"></section>
+<!-- SESSÃO BANNER -->
+<section class="banner">
+<h1>Seu site profissional pronto para vender mais</h1>
+</section>
 
+<main>
 <section class="hero-text">
 <div class="proof-top">
 <span role="img" aria-label="5 estrelas">★★★★★</span> Mais de 100 pessoas atendidas
@@ -152,7 +176,7 @@ Criamos sites profissionais para empresas que querem vender mais e parar de depe
 
 <div class="cta-wrapper">
 <a href="https://wa.me/5511922123841" class="whats" onclick="gtag('event','conversion',{'send_to':'AW-17979486534/2d0jCIqmgoAcEMbipP1C'});">
-FALAR NO WHATSAPP AGORA
+💬 FALAR NO WHATSAPP AGORA
 </a>
 <a href="#contato" class="primary">QUERO UM SITE PROFISSIONAL</a>
 </div>
